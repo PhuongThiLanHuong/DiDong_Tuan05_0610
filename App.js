@@ -3,98 +3,111 @@ import { StyleSheet, Text, TextInput, View,Image,TouchableOpacity } from 'react-
 
 
 export default function App() {
-  return (
-   
+  return(
     <View style={styles.container}>
-       <Text style={styles.textLogIn}>LOGIN</Text>
-      <View style={styles.editUser}>
-        <Image style={styles.imgUser} source={require('./assets/user.png')} />
-        <TextInput style={styles.inputUser} placeholder="Username"></TextInput>
+      <View style={styles.viewin}>
+      <View style={styles.view1}>
+          <Image style={styles.bookIcon} source={require("./assets/book.png")}></Image>
+          <Text style={styles.text1}>{'Nguyên hàm tích phân và ứng dụng \n Cung cấp bởi Tiki Trading'}</Text>  
+          <Text style={styles.text2}>141.800d</Text>
+        </View>
+        <View style={styles.view2}>
+          <View style={styles.view3}> 
+            <Text style={styles.text3}> Ma giam gia</Text>
+          </View>
+          <View style={styles.view4}>
+          <TouchableOpacity>Ap dung</TouchableOpacity>
+        </View>
+        </View>
       </View>
-      <View style={styles.editPass}>
-        <Image style={styles.imgPass} source={require('./assets/lock.png')}/>
-        <TextInput style={styles.inputPass} placeholder="Password"></TextInput>
-        <Image style={styles.imgEye} source={require('./assets/eye-1.png')}/>
-      </View>
-      <TouchableOpacity style={styles.btnRegis}>
-                <Text style={styles.textOfBtnRegis}>LOGIN</Text>
-      </TouchableOpacity>
-      <Text style={styles.text2}>Forgot your password?</Text>
     </View>
-
   );
 }
 const styles = StyleSheet.create({
   container: {
-      flex: 1,
-      alignItems: 'center',
-      backgroundColor: '#F7C700',
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '#C4C4C4',
   },
-  textLogIn: {
-    height:100,
-    fontSize: 25,
-    fontWeight: '700',
-    color: 'black',
-      
+  viewin: {
+    width: '100%',
+    height: 200,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'white',
   },
-  editUser: {
+  view1: {
     flexDirection: 'row',
-    width:'90%',
-    height: 50,
-    border: 'solid',
-    backgroundColor:'#ddd4d4'
+    width: '90%',
+    height: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  imgUser: {
-    left:1,
-    width: 40,
+  bookIcon: {
+    width: 50,
+    height:70,
   },
-  inputUser: {
-    flex:1,
-    height: 20,
-    margin: 12,
+  text1: {
+    fontSize: 10,
+    fontWeight: '600',
+    paddingLeft: 10,
   },
-  editPass: {
+  text2: {
+    fontSize: 10,
+    fontWeight: '600',
+    paddingLeft: 10,
+    color:'red',
+    marginLeft: 50,
+  },
+  view2: {
     flexDirection: 'row',
-    marginTop: 20,
-    width:'90%',
-    border: 'solid',
-    height: 50,
-    backgroundColor:'#ddd4d4'
+    width: '90%',
+    height: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  imgPass: {
-    left:1,
-    width: 40,
+  view3: {
+    height: 30,
+    width:'50%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'white',
   },
-  inputPass: {
-    flex:1,
-    height: 20,
-    margin: 12,
-  },
-  imgEye: {
-    width: 40,
+  
+  text3: {
+    fontSize: 10,
+    fontWeight: '600',
+    paddingLeft: 10,
     
   },
-  btnRegis: {
-    marginTop: 20,
-    backgroundColor: 'black',
+  view4: {
+    height: 30,
+    width:'40%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor:'blue',
+    border:'solid',
+    color:'white',
+  },
+  view5: {
+    marginTop: 10,
+    flexDirection: 'row',
+
     width: '90%',
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily: 'Roboto',
-    fontWeight: 'bold',
-    border: 'solid', 
   },
-  textOfBtnRegis: {
-    color: 'white',
-    fontSize: 20,
-    fontWeight: 'bold',
+  text5: {
+    fontSize: 10,
+    fontWeight: '600',
+    paddingLeft: 10,
   },
-  text2: {
-    marginTop: 20,
-    color: 'black',
-    fontSize: 15,
-    fontWeight: 'bold',
+  text6: {
+    fontSize: 10,
+    fontWeight: '600',
+    paddingLeft: 10,
+    color:'red',
+    marginLeft: 50,
   },
 });
-
